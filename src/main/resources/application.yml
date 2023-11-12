@@ -6,6 +6,13 @@ spring:
       server:
         git:
           uri: https://github.com/Arquitectura-de-Software-02-2023/server-config.git
+          ignoreLocalSshSettings: true
+          hostKey: github.com,
+          hostKeyAlgorithm: ssh-rsa
+          privateKey: |
+                      -----BEGIN RSA PRIVATE KEY-----
+                      
+
   application:
     name: server-config
 eureka:
